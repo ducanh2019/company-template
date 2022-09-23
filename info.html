@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>information</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+
+<body>
+    <nav class="bg-[#f8f8f8]">
+        <div class="header layout-container py-3 flex items-center justify-between" id="header">
+            <div class="max-h-[64px]">
+                <a href="#!">
+                    <img src="./img/logo-1-3.png" alt="" class="h-10">
+                </a>
+            </div>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <span class="overlay"></span>
+            <div class="navbar" id="navbar">
+                <ul class="menu" id="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">Giới thiệu</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Dịch vụ</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Chữ ký số</a></li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">Kiến thức
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">Kiến thức doanh nghiệp</a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link">Kiến thức kế toán</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu">Tra cứu
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#" class="submenu-link">Ngành nghề kinh doanh</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="layout-container pt-[15px] pb-[45px]">
+        <div class="md:flex flex-row flex-shrink-0 gap-x-8">
+            <div class="md:w-[calc(100%_-_275px)]">
+                <div>
+                    <form action="" class="pb-5">
+                        <div class="flex-grow relative shadow-bg">
+                            <div class="flex-col flex-grow">
+                                <input type="text" placeholder="Nhập tên công ty hoặc mã số thuế ..."
+                                    class="rounded-lg text-[#777777] inline-block text-lg bg-[#f7f7f7] h-[2.507em] px-[.75em] w-full placeholder:text-[#777777]">
+                            </div>
+                            <div class="flex-col absolute right-[2%] top-[25%]">
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div
+                        class="text-[15px] leading-[24px] bg-[#d9edf7] shadow-bg rounded-[4px] border border-[#bce8f1] p-5 font-medium mb-4">
+                        <h1 class="text-lg font-bold uppercase mb-2 text-[#0275d8] border-b border-[#0275d8]">CÔNG TY
+                            TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT HOLE NK</h1>
+                        <div class="border-dashed border-[#ccc] border-b mb-[6px]">
+                            <label for="" class="min-w-[150px] float-left">
+                                Mã số thuế:
+                            </label>
+                            <span>3603817125</span>
+                        </div>
+                        <div class="border-dashed border-[#ccc] border-b mb-[6px]">
+                            <label for="" class="min-w-[150px] float-left">
+                                Địa chỉ:
+                            </label>
+                            <span>
+                                Số 5, Khu 13, Xã Long Đức, Huyện Long Thành, Tỉnh Đồng Nai</span>
+                        </div>
+                        <div class="border-dashed border-[#ccc] border-b mb-[6px]">
+                            <label for="" class="min-w-[150px] float-left">
+                                Đại diện pháp luật:
+                            </label>
+                            <span class="text-[#0275d8]">
+                                LÊ NGỌC HOÀI</span>
+                        </div>
+                        <div class="border-dashed border-[#ccc] border-b mb-[6px]">
+                            <label for="" class="min-w-[150px] float-left">
+                                Tình trạng:
+                            </label>
+                            <span>Đang hoạt động (đã được cấp GCN ĐKT)</span>
+                        </div>
+                    </div>
+                    <div class="p-4 text-[#8a6d3b] border border-[#faebcc] shadow-bg bg-[#fcf8e3] rounded-[4px] mb-6">
+                        <p class="mb-5">Thông tin trên chỉ mang tính tham khảo, có thể doanh nghiệp mới làm thủ tục thay
+                            đổi thông
+                            tin nên hệ thống chưa cập nhật kịp thời. Trường hợp thông tin không đúng hoặc sai lệch bạn
+                            có thể gửi yêu cầu phần mềm cập nhật lại tự động.</p>
+                        <p class="mb-5">Quý khách có thể liên hệ trực tiếp với <b>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ
+                                THUẬT HOLE
+                                NK</b> tại địa chỉ <b>Số 5, Khu 13, Xã Long Đức, Huyện Long Thành, Tỉnh Đồng Nai </b>để
+                            có thông tin chính xác nhất</p>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr class="bg-[#efefef] font-bold border">
+                                <th>NGÀNH NGHỀ CHÍNH:</th>
+                                <td class="text-[#666666]">Sửa chữa các sản phẩm kim loại đúc sẵn</td>
+                            </tr>
+                            <tr class="border">
+                                <th class="uppercase">Ngành nghề kinh doanh:</th>
+                                <td>
+                                    <ul>
+                                        <li>Sửa chữa các sản phẩm kim loại đúc sẵn</li>
+                                        <li>Sửa chữa máy móc, thiết bị</li>
+                                        <li>Sửa chữa thiết bị điện tử và quang học</li>
+                                        <li>Sửa chữa thiết bị điện</li>
+                                        <li>Sửa chữa và bảo dưỡng phương tiện vận tải (trừ ô tô, mô tô, xe máy và xe có
+                                            động cơ khác)</li>
+                                        <li>Sửa chữa thiết bị khác</li>
+                                        <li>Lắp đặt máy móc và thiết bị công nghiệp</li>
+                                        <li>Lắp đặt hệ thống điện</li>
+                                        <li>Lắp đặt hệ thống cấp, thoát nước, lò sưởi và điều hoà không khí</li>
+                                        <li>Lắp đặt hệ thống xây dựng khác</li>
+                                        <li>Bán buôn vải, hàng may sẵn, giày dép</li>
+                                        <li>Bán buôn đồ dùng cho gia đình</li>
+                                        <li>Bán buôn máy vi tính, thiết bị ngoại vi và phần mềm</li>
+                                        <li>Bán buôn thiết bị và linh kiện điện tử, viễn thông</li>
+                                        <li>Bán buôn máy móc, thiết bị và phụ tùng máy nông nghiệp</li>
+                                        <li>Bán buôn máy móc, thiết bị và phụ tùng máy khác</li>
+                                        <li>Bán buôn nhiên liệu rắn, lỏng, khí và các sản phẩm liên quan</li>
+                                        <li>Bán buôn kim loại và quặng kim loại</li>
+                                        <li>Bán buôn vật liệu, thiết bị lắp đặt khác trong xây dựng</li>
+                                        <li>Bán buôn chuyên doanh khác chưa được phân vào đâu</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <img src="./img/banner-thanh-lap-doanh-nghiep-1.jpg" alt="" class="pb-[15px]">
+                    <h3 class="bg-[#0275d8] p-[10px] text-white rounded-[4px] font-bold leading-[1.3] mb-2">Doanh nghiệp
+                        mới cập nhật:</h3>
+                    <div class="bg-[#f8f9fa] p-3 mb-3 border shadow-lg">
+
+                        <a href="#!" class="text-[#0275d8] text-base font-bold my-[.1rem]">CÔNG TY TNHH THƯƠNG MẠI DỊCH
+                            VỤ KỸ THUẬT HOLE NK</a>
+                        <div>
+                            <label for="" class="text-[15px] leading-[24px] font-medium text-[#222]">
+                                <i class="pr-[5px] fa-solid fa-tag"></i>Mã số thuế:
+                            </label>
+                            <span class="mr-[60px] pl-[5px]">3603817125</span>
+                            <label for="" class="text-[15px] leading-[24px] font-medium text-[#222]"><i
+                                    class="pr-[5px] fa-solid fa-user"></i>Đại diện pháp luật:</label>
+                            <span class="mr-[60px] pl-[5px]"> LÊ NGỌC HOÀI</span>
+                        </div>
+                        <div>
+                            <label for="" class="text-[15px] leading-[24px] font-medium text-[#222]"><i
+                                    class="pr-[5px] fa-solid fa-location-dot"></i>Địa chỉ:</label>
+                            <span class="pl-[5px]">Số 5, Khu 13, Xã Long Đức, Huyện Long Thành, Tỉnh Đồng Nai</span>
+                        </div>
+                    </div>
+                    <div class="bg-[#f8f9fa] p-3 mb-3 border shadow-lg">
+                        <a href="#!" class="text-[#0275d8] text-base font-bold my-[.1rem]">CÔNG TY TNHH THƯƠNG MẠI DỊCH
+                            VỤ KỸ THUẬT HOLE NK</a>
+                        <div>
+                            <label for="" class="text-[15px] leading-[24px] font-medium text-[#222]">
+                                <i class="pr-[5px] fa-solid fa-tag"></i>Mã số thuế:
+                            </label>
+                            <span class="mr-[60px] pl-[5px]">3603817125</span>
+                            <label for="" class="text-[15px] leading-[24px] font-medium text-[#222]"><i
+                                    class="pr-[5px] fa-solid fa-user"></i>Đại diện pháp luật:</label>
+                            <span class="mr-[60px] pl-[5px]"> LÊ NGỌC HOÀI</span>
+                        </div>
+                        <div>
+                            <label for="" class="text-[15px] leading-[24px] font-medium text-[#222]"><i
+                                    class="pr-[5px] fa-solid fa-location-dot"></i>Địa chỉ:</label>
+                            <span class="pl-[5px]">Số 5, Khu 13, Xã Long Đức, Huyện Long Thành, Tỉnh Đồng Nai</span>
+                        </div>
+                    </div>
+                    <div class="bg-[#f8f9fa] p-3 mb-3 border shadow-lg">
+                        <a href="#!" class="text-[#0275d8] text-base font-bold my-[.1rem]">CÔNG TY TNHH THƯƠNG MẠI DỊCH
+                            VỤ KỸ THUẬT HOLE NK</a>
+                        <div>
+                            <label for="" class="text-[15px] leading-[24px] font-medium text-[#222]">
+                                <i class="pr-[5px] fa-solid fa-tag"></i>Mã số thuế:
+                            </label>
+                            <span class="mr-[60px] pl-[5px]">3603817125</span>
+                            <label for="" class="text-[15px] leading-[24px] font-medium text-[#222]"><i
+                                    class="pr-[5px] fa-solid fa-user"></i>Đại diện pháp luật:</label>
+                            <span class="mr-[60px] pl-[5px]"> LÊ NGỌC HOÀI</span>
+                        </div>
+                        <div>
+                            <label for="" class="text-[15px] leading-[24px] font-medium text-[#222]"><i
+                                    class="pr-[5px] fa-solid fa-location-dot"></i>Địa chỉ:</label>
+                            <span class="pl-[5px]">Số 5, Khu 13, Xã Long Đức, Huyện Long Thành, Tỉnh Đồng Nai</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:max-w-[275px]">
+                <div class="bg-[#fcdead] border border-[#faebcc] p-[15px] text-sm text-justify">
+                    <h3 class="font-bold">Góc Cảnh Báo:</h3>
+                    <p class="mb-[1.3em]">Hiện tại trên cả nước xuất hiện quá nhiều các công ty đa cấp hoạt động không được sự cấp phép của
+                        nhà nước. Các công ty này hoạt động dưới hình thức đa cấp, lừa đảo,… bằng cách thường xuyên tổ
+                        chức các buổi hội thảo, livestream,…. Để dụ dỗ, lôi kéo các khách hàng cả tin về giá cả sản phẩm
+                        giảm giá, thu nhập với lãi khủng.</p>
+                    <p>Rất mong tất cả mọi người nên sáng suốt trước khi quyết định mọi vấn đề.</p>
+                </div>
+                <div class="my-[17px]">
+                    <h3 class="text-base text-white bg-[#0275d8] block px-[10px] py-2 font-bold">Tỉnh/Thành phố</h3>
+                    <ul class="province-border">
+                        <li><a href="#!">Ha Noi</a></li>
+                        <li><a href="#!">Bac Giang</a></li>
+                        <li><a href="#!">Bac Ninh</a></li>
+                        <li><a href="#!">Ha Noi</a></li>
+                        <li><a href="#!">Bac Giang</a></li>
+                        <li><a href="#!">Bac Ninh</a></li>
+                        <li><a href="#!">Ha Noi</a></li>
+                        <li><a href="#!">Bac Giang</a></li>
+                        <li><a href="#!">Bac Ninh</a></li>
+                        <li><a href="#!">Ha Noi</a></li>
+                        <li><a href="#!">Bac Giang</a></li>
+                        <li><a href="#!">Bac Ninh</a></li>
+                        <li><a href="#!">Ha Noi</a></li>
+                        <li><a href="#!">Bac Giang</a></li>
+                        <li><a href="#!">Bac Ninh</a></li>
+                    </ul>
+                </div>
+                <img src="./img/banner-hotline.jpg" alt="" class="w-full">
+            </div>
+        </div>
+    </div>
+    <footer class="bg-[#181b25] pt-[31px]">
+        <div class="layout-container">
+            <div class="flex flex-row flex-shrink-0 flex-wrap justify-between text-[#86878a]">
+                <div>
+                    <h3 class="text-[20px] leading-[32px] font-bold mb-[10px] text-white">THÔNG TIN VỀ WEBSITE</h3>
+                    <p>Website tra cứu thông tin doanh nghiệp thuộc sở hữu hệ thống AZF</p>
+                </div>
+                <div>
+                    <span class="font-semibold leading-[17px] ">CHÍNH SÁCH</span>
+                    <div class="divide-y-[3px]"></div>
+                    <p>Điều khoản sử dụng</p>
+                    <p>Quyền riêng tư</p>
+                </div>
+                <div>
+                    <span class="font-semibold leading-[17px] ">DỊCH VỤ</span>
+                    <div class="divide-y-[3px]"></div>
+                    <p>Giới thiệu về website</p>
+                    <p>Liên hệ</p>
+                </div>
+                <div>
+                    <span class="font-semibold leading-[17px] ">LIÊN KẾT HỮU ÍCH</span>
+                    <div class="divide-y-[3px]"></div>
+                    <p>Thiết kế website doanh nghiệp</p>
+                    <p>Thành lập công ty</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#0d0f14] mt-[45px]">
+            <div class="layout-container text-[#86878a]">
+                Copyright 2022 © <strong>AZF</strong>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
